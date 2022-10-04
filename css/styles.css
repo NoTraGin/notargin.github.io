@@ -4882,11 +4882,11 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #000;
 }
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #000;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
@@ -11823,7 +11823,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #000;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11867,19 +11867,19 @@ body {
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #467370;
   }
   #mainNav .nav-link:active {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.55);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: rgba(255, 255, 255, 0.479);
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #000;
+    color: rgba(255, 255, 255, 0.479);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
@@ -11922,7 +11922,7 @@ body {
 .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
@@ -11948,7 +11948,7 @@ body {
   }
   .masthead h1,
   .masthead .h1 {
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
