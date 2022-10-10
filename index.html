@@ -7,6 +7,8 @@
     <meta name="author" content="" />
     <title>Portfolio-Dian_Trado_Ginting</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -18,7 +20,7 @@
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container px-4 px-lg-5">
+      <div class="container px-4 px-lg-5" data-aos="fade-down" data-aos-delay="1550">
         <a class="navbar-brand" href="#page-top">Portfolio</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -37,7 +39,7 @@
     <header class="masthead">
       <div class="container px-4 px-lg-3 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
-          <div class="text-center">
+          <div class="text-center" data-aos="zoom-out" data-aos-duration="1500">
             <p class="text-white"><span>Hi, my name is</span></p>
             <h1 class="mx-auto my-0 text-uppercase">Dian Trado<br />Ginting</h1>
             <p class="text-white">I'm a <span class="typed" data-typed-items="Graphic Designer, Developer, Freelancer, Translator"></span></p>
@@ -49,12 +51,14 @@
     <section class="about-section text-center" id="about">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="text-white mb-4">About</h2>
-            <p class="text-white-50">
+          <div class="col-lg-8 row">
+            <h2 class="text-white mb-4" data-aos="zoom-out" data-aos-once="true">About</h2>
+            <p class="text-white-50 justify-content-end col text-end mx-3" data-aos="fade-right" data-aos-once="true">
               Hi, I'm a freelancer, I have skills in web development. I specialized in HTML, CSS and I can use Bootstrap well. I also have skills in graphic design and can use tools such as Photoshop and Corel Draw. I can also make digital
-              arts and painting I Graduated from University and have a Diploma majoring in English. Right now, I'm still learning to improve my web developing skills to be able to fully understand about Front-end and also Back-end web
-              development.
+              arts and painting.
+            </p>
+            <p class="text-white-50 justify-content-start col text-start mx-3" data-aos="fade-left" data-aos-once="true">
+              I Graduated from University and have a Diploma majoring in English. Right now, I'm still learning to improve my web developing skills to be able to fully understand about Front-end and also Back-end web development.
             </p>
           </div>
         </div>
@@ -77,48 +81,46 @@
     </section>
     <!-- Projects-->
     <section class="projects-section bg-light pt-5" id="projects">
-      <h2 class="text-black mb-4 text-center">Projects</h2>
-      <p class="text-black text-center">Here are some of the projects that I have been working on up until now</p>
+      <h2 class="text-black mb-4 text-center" data-aos="fade-down" data-aos-once="true">Projects</h2>
+      <p class="text-black text-center" data-aos="fade-up" data-aos-once="true">Here are some of the projects that I have been working on up until now</p>
       <!-- project carousel -->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="container px-4 px-lg-5 p-5 h-75">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner ratio ratio-16x9">
-            <div class="carousel-item active">
-              <img src="assets/img/bg-masthead.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-md-block">
-                <h5 class="text-white">First slide label</h5>
-                <p class="text-white">Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/demo-image-01.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-md-block">
-                <h5 class="text-white">Second slide label</h5>
-                <p class="text-white">Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/demo-image-02.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-md-block">
-                <h5 class="text-white">Third slide label</h5>
-                <p class="text-white">Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div id="carouselExampleDark" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" class="carousel carousel-dark slide container-fluid px-lg-5 my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner ratio ratio-21x9">
+          <div class="carousel-item active">
+            <img src="assets/img/bg-masthead.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">First slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/demo-image-01.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Second slide label</h5>
+              <p class="text-light">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/demo-image-02.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">Third slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <!-- carousel end -->
       <div class="container">
@@ -134,7 +136,7 @@
             </div>
           </div> -->
           <!-- Project One Row-->
-          <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+          <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true">
             <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
             <div class="col-lg-6">
               <div class="bg-black text-center h-100 project">
@@ -149,7 +151,7 @@
             </div>
           </div>
           <!-- Project Two Row-->
-          <div class="row gx-0 justify-content-center">
+          <div class="row gx-0 justify-content-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true">
             <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
               <div class="bg-black text-center h-100 project">
@@ -168,10 +170,39 @@
     </section>
     <!-- Contact-->
     <section class="contact-section bg-black" id="contact">
+      <h2 class="text-white text-center pb-3">Contact</h2>
       <div class="container px-4 px-lg-5">
+        <div class="form-container w-75 mx-auto bg-dark p-4 mb-5 rounded-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <form name="submit-to-google-sheet">
+            <div class="alert contact-alert alert-secondary d-flex mb-3 align-items-center d-none" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" class="bi-check-circle-fill flex-row justify-content-start" role="icon" aria-label="Success:">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </svg>
+              <div class="p2 flex-grow-1">Thank you! I have recived your message</div>
+              <div class="p2"><button type="button" class="btn-close d-block justify-content-end flex-row-reverse" data-bs-dismiss="alert" aria-label="Close"></button></div>
+            </div>
+            <div class="mb-3">
+              <label for="InputName" class="form-label text-white">Name:</label>
+              <input name="name" type="text" class="form-control" id="InputName" placeholder="Ex: Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail1" class="form-label text-white">Email address:</label>
+              <input name="email" type="email" class="form-control" id="InputEmail1" placeholder="Ex: youremail@email.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="Textarea1" class="form-label text-white">Message</label>
+              <textarea name="message" class="form-control" id="Textarea1" rows="3" placeholder="Enter your message here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-send btn-secondary mb-1">Send</button>
+            <button class="btn btn-load btn-secondary mb-1 d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <span class="visually-hidden">Loading...</span>
+            </button>
+          </form>
+        </div>
         <div class="row gx-4 gx-lg-5">
           <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
+            <div class="card py-4 h-100" data-aos="flip-left" data-aos-once="true">
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Address</h4>
@@ -181,7 +212,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
+            <div class="card py-4 h-100" data-aos="flip-left" data-aos-delay="100" data-aos-once="true">
               <div class="card-body text-center">
                 <i class="fas fa-envelope text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Email</h4>
@@ -191,7 +222,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
+            <div class="card py-4 h-100" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
               <div class="card-body text-center">
                 <i class="text-primary mb-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mb-sm-2 bi bi-whatsapp" viewBox="0 0 16 16">
@@ -208,9 +239,9 @@
           </div>
         </div>
         <div class="social d-flex justify-content-center">
-          <a class="mx-2" href="https://instagram.com/dian.trado?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-          <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+          <a class="mx-2" href="https://instagram.com/dian.trado?igshid=YmMyMTA2M2Y=" target="_blank" data-aos="slide-up"><i class="fab fa-instagram"></i></a>
+          <a class="mx-2" href="#!" data-aos="slide-up" data-aos-delay="50"><i class="fab fa-facebook-f"></i></a>
+          <a class="mx-2" href="#!" data-aos="slide-up" data-aos-delay="100"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </section>
@@ -231,11 +262,10 @@
     <script src="assets/typed.js/typed.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
